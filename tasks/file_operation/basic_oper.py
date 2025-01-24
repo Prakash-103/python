@@ -46,7 +46,7 @@ for cmd in command:
     print(cmd)  #it prints with the \n spaces
     print(cmd.rstrip("\n"))  # it removes the \n during the output execution       
 
-it auto file close function so we noo need to use file1.colse()     /
+#it auto file close function so we noo need to use file1.close()   
 
 ###########################################################################################################
 
