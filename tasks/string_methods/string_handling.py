@@ -48,60 +48,60 @@ passwrd='     Sdf  12 $DE  123'
 
 # join is used to ion the list using the special characters
 
-list1= ['cisco','ios','v21.1']
+# list1= ['cisco','ios','v21.1']
 
-print('-'.join(list1))
-print('__'.join(list1))
+# print('-'.join(list1))
+# print('__'.join(list1))
 
-####################################################################################################################
+# ####################################################################################################################
 
-# ljust is used to display the values is the ordered way
+# # ljust is used to display the values is the ordered way
 
-print('ios'.ljust(20),'v21')
-print('juniperios'.ljust(20),'v22')
-print('sonicios'.ljust(20),'v23')
-print('ios'.ljust(20),'v24')
+# print('ios'.ljust(20),'v21')
+# print('juniperios'.ljust(20),'v22')
+# print('sonicios'.ljust(20),'v23')
+# print('ios'.ljust(20),'v24')
 
-###############################################################################################################
+# ###############################################################################################################
 
-# maketrans is ues to make the particuler changes the maketran word will be  in the same length of the string
+# # maketrans is ues to make the particuler changes the maketran word will be  in the same length of the string
 
-msg='hi there, \n how are you'
-tran=str.maketrans('hi','He')
-print(msg.translate(tran))
+# msg='hi there, \n how are you'
+# tran=str.maketrans('hi','He')
+# print(msg.translate(tran))
 
-#############################################################################################################
+# #############################################################################################################
 
-# partition it makes the partion based nthe input we given in the string
+# # partition it makes the partion based nthe input we given in the string
 
-print(msg.partition('how'))
+# print(msg.partition('how'))
 
-##############################################################################################################
+# ##############################################################################################################
 
-#replace will replace the word accorcding to the input we given
+# #replace will replace the word accorcding to the input we given
 
-print(msg.replace("hi", 'hello'))
+# print(msg.replace("hi", 'hello'))
 
-###############################################################################################################
+# ###############################################################################################################
 
-# splitlines it useds to display the list of lines in the array
+# # splitlines it useds to display the list of lines in the array
 
-print(msg.splitlines())
-print(msg.splitlines(True))         # includes the  \n
+# print(msg.splitlines())
+# print(msg.splitlines(True))         # includes the  \n
 
-###########################################################################################################
+# ###########################################################################################################
 
-# zfill or zero_fill it defines the char and fill the remaining char by zero's
+# # zfill or zero_fill it defines the char and fill the remaining char by zero's
 
-print(username.zfill(10))
+# print(username.zfill(10))
 
-###########################################################################################################
+# ###########################################################################################################
 
-# translate can be match by unicode
+# # translate can be match by unicode
 
-trans={46: 33}   # it matches the unicode of   .  and !
+# trans={46: 33}   # it matches the unicode of   .  and !
 
-print('hithere....'.translate(trans))
+# print('hithere....'.translate(trans))
 
 ##############################################################################################################
 
