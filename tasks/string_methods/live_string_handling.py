@@ -32,18 +32,18 @@
 ##!######################!!##################!!!###########################################################!!!##
 ######## accesss file from the system and read it #########################################
 
-with open('output.txt','r') as file:
-    out_line=file.readlines()
-    # print(out_line)
-    print('enter to continue...')
+# with open('output.txt','r') as file:
+#     out_line=file.readlines()
+#     # print(out_line)
+#     print('enter to continue...')
     
-    for line in out_line:
-        if input()=='':
-            split_lines=line.strip('\n')
-            res=split_lines
-            print(split_lines,end='')
+#     for line in out_line:
+#         if input()=='':
+#             split_lines=line.strip('\n')
+#             res=split_lines
+#             print(split_lines,end='')
 
 ######################################################################################
 
 
-
+print('\033[34;1m  '+'connecting to device'+'\033[0m')
