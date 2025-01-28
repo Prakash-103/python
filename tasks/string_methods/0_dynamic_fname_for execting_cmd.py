@@ -6,18 +6,20 @@ import traceback
 import datetime
 
 hostname= '192.168.107.137'
-
 username= "admin1"
 password= "pass123"
 
-juno_cmd=['show configuration | display set | no-more', ' show interfaces terse | no more','show lldp | no more']
 
+with open('sh_config.txt','r') as file1:
+     config_cmds=file1.readlines()
+
+print (config_cmds)
 
 def exe_commands(hostname,command):
     try:
         print (f"Connecting to {hostname}...")
-        now= datetime.datetime.now().replace(microsecond=0)         # for live time stamp without microseconds   
-        current_conf_file= f'{now}_{hostname}.json'                      # for dynamic file name
+        now= datetime.datetime.now().replace(microsecond=0)            
+        #current_conf_file= f'{now}_{hostname}'                     
 
         ssh=client.SSHClient()
         ssh.set_missing_host_key_policy(client.AutoAddPolicy())
@@ -30,21 +32,18 @@ def exe_commands(hostname,command):
 
         int_config=ssh.invoke_shell() #invoke shell 
 
-        with open(current_conf_file,'w') as conf:           # open the file to write 
-            for cmd in command:             # for executing comands
-
-                    int_config.send(f" {cmd} \n")
-                    time.sleep(1)
-                    output=int_config.recv(65535).decode('utf-8')
-                    conf.write(output)                              # store the precheck output in the file
-                    print(output)
-                    
-            int_config.send(" show run \n")                # for sh run commmands
-            time.sleep(1)                      
-            output=int_config.recv(65535).decode('utf-8')
-            conf.write(output)                              # store the run command output in the file
-            print(output)
+        #with open(current_conf_file,'w') as conf_file:           
         
+        for cmd in enumerate(command,start=1):          # code to auto organize the structure
+            file_name=f'{str(now).replace(" ",":")}_{str(cmd[0]).zfill(2)}_{str(cmd[1]).replace(" ","_").strip()}.json' # converting the exch f-int as str to manupulate it and gives the output in diff file 
+            
+            with open(file_name,'w') as file1:     # code for the file name to be open and run the cmd
+                int_config.send(f" {cmd[1]} ")        
+                time.sleep(1)
+                output=int_config.recv(65535).decode('utf-8')
+                file1.write(output)                              
+                print(output)
+
         ssh.close()
         print(f" ssh {hostname} connection closed")
 
@@ -68,5 +67,5 @@ def exe_commands(hostname,command):
 
     
 
-exe_commands( hostname,juno_cmd)
+exe_commands( hostname,config_cmds)
 

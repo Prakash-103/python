@@ -1,0 +1,5 @@
+show run
+show run ip interface brief
+show run | section router ospf    
+show lldp neighbors
+show lldp
