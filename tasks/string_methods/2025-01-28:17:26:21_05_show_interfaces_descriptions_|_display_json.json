@@ -1,0 +1,15 @@
+show interfaces descriptions | display json 
+{
+    "cli" : [
+    {
+        "banner" : [
+        {
+            "data" : "{master:0}"
+        }
+        ]
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 

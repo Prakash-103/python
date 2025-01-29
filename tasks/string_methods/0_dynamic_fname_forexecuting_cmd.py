@@ -6,6 +6,7 @@ import traceback
 import datetime
 
 hostname= '192.168.107.137'
+
 username= "admin1"
 password= "pass123"
 
@@ -13,14 +14,12 @@ password= "pass123"
 with open('sh_config.txt','r') as file1:
      config_cmds=file1.readlines()
 
-print (config_cmds)
+#print (config_cmds)
 
-def exe_commands(hostname,command):
+def exe_commands(hostname,command,username=username,password=password):
     try:
         print (f"Connecting to {hostname}...")
         now= datetime.datetime.now().replace(microsecond=0)            
-        #current_conf_file= f'{now}_{hostname}'                     
-
         ssh=client.SSHClient()
         ssh.set_missing_host_key_policy(client.AutoAddPolicy())
         ssh.connect(hostname=hostname,
@@ -38,7 +37,7 @@ def exe_commands(hostname,command):
             file_name=f'{str(now).replace(" ",":")}_{str(cmd[0]).zfill(2)}_{str(cmd[1]).replace(" ","_").strip()}.json' # converting the exch f-int as str to manupulate it and gives the output in diff file 
             
             with open(file_name,'w') as file1:     # code for the file name to be open and run the cmd
-                int_config.send(f" {cmd[1]} ")        
+                int_config.send(f" {str(cmd[1])} ")        
                 time.sleep(1)
                 output=int_config.recv(65535).decode('utf-8')
                 file1.write(output)                              
@@ -50,22 +49,24 @@ def exe_commands(hostname,command):
 
 
     except socket.gaierror:
-        print (f" the  {hostname} is not reachable or not valid")
+        return(f" the  {hostname} is not reachable or not valid")
 
     except  ssh_exception.NoValidConnectionsError:
-        print(f" Enter the valid hostname...")
+        return(f" Enter the valid hostname...")
 
 
     except ssh_exception.AuthenticationException:
-        print (f" authentication failed for {hostname} ")
+        return(f" authentication failed for {hostname} ")
 
 
     except:
-        print(f" unable to connect to {hostname}")
-        print(sys.exc_info())
         traceback.print_exception(*sys.exc_info())
+        return(sys.exc_info())
+    
 
     
 
-exe_commands( hostname,config_cmds)
+#exe_commands( hostname,config_cmds,password,username)
 
+
+print(exe_commands( hostname,config_cmds,password,username))

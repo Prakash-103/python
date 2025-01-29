@@ -1,0 +1,11 @@
+show lldp neighbors | display json 
+{
+    "lldp-neighbors-information" : [
+    {
+        "attributes" : {"junos:style" : "brief"}, 
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 

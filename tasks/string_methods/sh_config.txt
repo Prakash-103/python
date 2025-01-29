@@ -1,5 +1,7 @@
-show run
-show run ip interface brief
-show run | section router ospf    
-show lldp neighbors
-show lldp
+set cli screen-length 0
+show ethernet-switching table | display json
+show version | display json
+show interfaces terse | display json
+show interfaces descriptions | display json
+show lldp neighbors | display json
+show virtual-chassis | display json

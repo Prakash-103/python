@@ -1,0 +1,96 @@
+show virtual-chassis | display json 
+{
+    "virtual-chassis-information" : [
+    {
+        "virtual-chassis-id-information" : [
+        {
+            "virtual-chassis-id" : [
+            {
+                "data" : "6c89.751e.e97c"
+            }
+            ], 
+            "virtual-chassis-mode" : [
+            {
+                "data" : "Enabled"
+            }
+            ]
+        }
+        ], 
+        "member-list" : [
+        {
+            "attributes" : {"junos:style" : "single-slot"}, 
+            "member" : [
+            {
+                "member-status" : [
+                {
+                    "data" : "Prsnt"
+                }
+                ], 
+                "member-id" : [
+                {
+                    "data" : "0"
+                }
+                ], 
+                "fpc-slot" : [
+                {
+                    "data" : "(FPC 0)"
+                }
+                ], 
+                "member-serial-number" : [
+                {
+                    "data" : "817789208176"
+                }
+                ], 
+                "member-model" : [
+                {
+                    "data" : "vqfx-10000"
+                }
+                ], 
+                "member-priority" : [
+                {
+                    "data" : "128"
+                }
+                ], 
+                "member-mixed-mode" : [
+                {
+                    "data" : "N"
+                }
+                ], 
+                "member-route-mode" : [
+                {
+                    "data" : "VC"
+                }
+                ], 
+                "member-role" : [
+                {
+                    "data" : "Master*"
+                }
+                ], 
+                "neighbor-list" : [
+                {
+                }
+                ]
+            }
+            ]
+        }
+        ], 
+        "next-member-information" : [
+        {
+            "next-member-id" : [
+            {
+                "data" : "1"
+            }
+            ], 
+            "next-fpc-slot" : [
+            {
+                "data" : "1"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 

@@ -1,0 +1,10 @@
+show ethernet-switching table | display json 
+{
+    "l2ng-l2ald-rtb-macdb" : [
+    {
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 

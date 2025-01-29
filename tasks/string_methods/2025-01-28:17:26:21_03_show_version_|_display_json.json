@@ -1,0 +1,206 @@
+show version | display json 
+{
+    "multi-routing-engine-results" : [
+    {
+        "multi-routing-engine-item" : [
+        {
+            "re-name" : [
+            {
+                "data" : "fpc0"
+            }
+            ], 
+            "software-information" : [
+            {
+                "host-name" : [
+                {
+                    "data" : "vqfx-re"
+                }
+                ], 
+                "product-model" : [
+                {
+                    "data" : "vqfx-10000"
+                }
+                ], 
+                "product-name" : [
+                {
+                    "data" : "vqfx-10000"
+                }
+                ], 
+                "junos-version" : [
+                {
+                    "data" : "18.1R1.9"
+                }
+                ], 
+                "junos-edition" : [
+                {
+                    "data" : "limited"
+                }
+                ], 
+                "package-information" : [
+                {
+                    "name" : [
+                    {
+                        "data" : "junos"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Base OS boot [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jbase"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Base OS Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jcrypto"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Crypto Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jdocs"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Online Documentation [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jkernel"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Kernel Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jpfe"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Packet Forwarding Engine Support (qfx-10-f) [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jroute"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Routing Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jsd"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS jsd [i386-18.1R1.9-jet-1]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jsdn-i386"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS SDN Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jswitch"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Enterprise Software Suite [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "jweb"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS Web Management [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "py-base-i386"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS py-base-i386 [18.1R1.9]"
+                    }
+                    ]
+                }, 
+                {
+                    "name" : [
+                    {
+                        "data" : "py-extensions-i386"
+                    }
+                    ], 
+                    "comment" : [
+                    {
+                        "data" : "JUNOS py-extensions-i386 [18.1R1.9]"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 

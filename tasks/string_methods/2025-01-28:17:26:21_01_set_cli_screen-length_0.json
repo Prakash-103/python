@@ -1,0 +1,9 @@
+Last login: Tue Jan 28 11:48:14 2025 from 192.168.107.131
+--- JUNOS 18.1R1.9 built 2018-03-23 20:37:00 UTC
+ set cli screen-length 0
+ {master:0}
+admin1@vqfx-re> set cli screen-length 0 
+Screen length set to 0
+
+{master:0}
+admin1@vqfx-re> 

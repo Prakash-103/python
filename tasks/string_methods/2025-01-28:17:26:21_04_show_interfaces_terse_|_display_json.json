@@ -1,0 +1,884 @@
+show interfaces terse | display json 
+{
+    "interface-information" : [
+    {
+        "attributes" : {"xmlns" : "http://xml.juniper.net/junos/18.1R1/junos-interface", 
+                        "junos:style" : "terse"
+                       }, 
+        "physical-interface" : [
+        {
+            "name" : [
+            {
+                "data" : "gr-0/0/0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "bme0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "bme0.0"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "128.0.0.1/2", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }, 
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "128.0.0.4/2", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }, 
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "128.0.0.16/2", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }, 
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "128.0.0.63/2", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "cbp0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "dsc"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "em0.0"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "192.168.107.137/24", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em1"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "em1.0"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "169.254.0.2/24", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em2"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "em2.32768"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "192.168.1.2/24", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em3"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em4"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "em4.32768"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "down"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "192.0.2.2/24", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em5"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em6"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em7"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em8"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em9"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em10"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "em11"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "esi"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "gre"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "ipip"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "irb"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "jsrv"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "jsrv.1"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "128.0.0.127/2", 
+                            "attributes" : {"junos:emit" : "emit"}
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "lo0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "logical-interface" : [
+            {
+                "name" : [
+                {
+                    "data" : "lo0.0"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ]
+                }, 
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet6"
+                    }
+                    ], 
+                    "interface-address" : [
+                    {
+                        "ifa-local" : [
+                        {
+                            "data" : "fe80::205:860f:fc71:4a00"
+                        }
+                        ], 
+                        "ifa-destination" : [
+                        {
+                            "attributes" : {"junos:emit" : "emit"}, 
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }, 
+            {
+                "name" : [
+                {
+                    "data" : "lo0.16385"
+                }
+                ], 
+                "admin-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "oper-status" : [
+                {
+                    "data" : "up"
+                }
+                ], 
+                "filter-information" : [
+                {
+                }
+                ], 
+                "address-family" : [
+                {
+                    "address-family-name" : [
+                    {
+                        "data" : "inet"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "lsi"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "mtun"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "pimd"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "pime"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "pip0"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "tap"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "vme"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "down"
+            }
+            ]
+        }, 
+        {
+            "name" : [
+            {
+                "data" : "vtep"
+            }
+            ], 
+            "admin-status" : [
+            {
+                "data" : "up"
+            }
+            ], 
+            "oper-status" : [
+            {
+                "data" : "up"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+{master:0}
+admin1@vqfx-re> 
