@@ -1,5 +1,9 @@
 import difflib
 import webbrowser
+import vscode
+import code
+import subprocess
+
 
 with open('sample1.txt','r') as pre_check:
     pre_check_lines = pre_check.readlines() 

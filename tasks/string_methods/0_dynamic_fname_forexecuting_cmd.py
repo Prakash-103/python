@@ -10,13 +10,13 @@ hostname= '192.168.107.137'
 username= "admin1"
 password= "pass123"
 
+def cmd_file(command_file):
+    with open(command_file,'r') as file1:
+        config_cmds=file1.readlines()
+        return(config_cmds)
+    #print (config_cmds)
 
-with open('sh_config.txt','r') as file1:
-     config_cmds=file1.readlines()
-
-#print (config_cmds)
-
-def exe_commands(hostname,command,username=username,password=password):
+def exe_command_files(hostname,command_file,username=username,password=password):
     try:
         print (f"Connecting to {hostname}...")
         now= datetime.datetime.now().replace(microsecond=0)            
@@ -32,8 +32,8 @@ def exe_commands(hostname,command,username=username,password=password):
         int_config=ssh.invoke_shell() #invoke shell 
 
         #with open(current_conf_file,'w') as conf_file:           
-        
-        for cmd in enumerate(command,start=1):          # code to auto organize the structure
+        config_file=cmd_file(command_file)
+        for cmd in enumerate(config_file,start=1):          # code to auto organize the structure
             file_name=f'{str(now).replace(" ",":")}_{str(cmd[0]).zfill(2)}_{str(cmd[1]).replace(" ","_").strip()}.json' # converting the exch f-int as str to manupulate it and gives the output in diff file 
             
             with open(file_name,'w') as file1:     # code for the file name to be open and run the cmd
@@ -41,10 +41,10 @@ def exe_commands(hostname,command,username=username,password=password):
                 time.sleep(1)
                 output=int_config.recv(65535).decode('utf-8')
                 file1.write(output)                              
-                print(output)
+                return(output)
 
         ssh.close()
-        print(f" ssh {hostname} connection closed")
+        return(f" ssh {hostname} connection closed")
 
 
 
@@ -66,7 +66,10 @@ def exe_commands(hostname,command,username=username,password=password):
 
     
 
-#exe_commands( hostname,config_cmds,password,username)
+#exe_command_files( hostname,config_cmds,password,username)
 
+print(cmd_file('sh_config.txt'))
 
-print(exe_commands( hostname,config_cmds,password,username))
+command_file= "commands.txt" 
+
+print(exe_command_files( hostname,command_file,password,username))
