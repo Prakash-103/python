@@ -4,9 +4,9 @@ import sys
 import socket
 import traceback
 
-hostname= '192.168.107.121'
+hostname= '192.168.107.137'
 
-username= "admin1"
+username= "admin"
 password= "pass123"
 
 juno_cmd=['show configuration | display set | no-more', ' show interfaces terse | no more','show lldp | no more']
@@ -23,11 +23,11 @@ def exe_commands(hostname,command):
                     password=password,
                     look_for_keys=False,allow_agent=False)
         print(f' connected to the {hostname}')
+        int_config=ssh.invoke_shell()
         for cmd in command:
             try:    
-                int_config=ssh.invoke_shell()
                 int_config.send(f" {cmd} \n")
-                time.sleep(1)
+                time.sleep(10)
                 output=int_config.recv(65535).decode('utf-8')
                 print(output)
             except:
