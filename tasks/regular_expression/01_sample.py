@@ -23,7 +23,27 @@
 
 # ###############################################################################
 
+import re
 
+with open('comparison_file.txt','r') as testfile:
+    check_file=testfile.read()
+
+# print(check_file)
+pattern1= r"\sparamiko"   # match the paramiko only
+pattern2= r"p.+,*-paramiko_(\d\S+)"    # match teh paramiko till the last wordof the sentence and group the version value as group(1)
+                                            
+
+# print(pattern1)
+re_out=re.search(pattern2,check_file)
+# print(re_out)
+if re_out:
+    print('match found')
+    print(re_out)       # prints the value expect the group(1)
+    print(re_out.group(0)) # prints the every element matches
+    print(re_out.group(1)) # prints the group(1) value  
+    print(f" {'The version of paramiko'.rjust(18)} : {re_out.group(1)}")
+else:
+    print('match not found')
 
 
 
