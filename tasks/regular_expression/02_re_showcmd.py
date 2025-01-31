@@ -79,3 +79,57 @@ for iter in result:
 
 
 
+##################################################################################################
+
+#### multiline pattern matching 
+os_version=input(" Enter the OS version:").casefold()
+print(re.findall(pattern=r'\Acisco.+23.4.02\Z',string='osversion',flags=re.MULTILINE))
+#\A represents the only the starting line  || \z represents the only the ending line
+if match:
+    print('the value match:',match)
+else:
+    print ('no match')
+
+##################################################################################################
+#######  \b  \B
+pattern2=(r'\bcisco') # matches only at the begining of the string
+pattern4=(r'cisco\b') # matches only at the end of the string
+pattern3=(r'\Bcisco') # matches only at the middle of the string
+
+#######################################################################################################
+
+########            {m,n}
+
+pattern1=(r'cisco{2,5}')  # it iter the occurance of cisco 2 to 5 times
+match=re.search(pattern1,'ciscooooo')       
+print(match)
+
+######################################################################################################
+##########  \*\n
+pattern1=(r'\*\n') 
+
+####################################################################################################3
+
+#################### ignore case re.I
+
+print(re.search('hello','Hello',re.I))
+
+#################################################################################################33
+#       dotall
+
+print(re.search('hello.hello','Hello\nhello',flags=re.DOTALL | re.IGNORECASE))
+
+################################################################################################
+pattern1=re.compile(r'abcd1234qwe')
+print(re.match('abcd',pattern1))
+print(re.search('1234qwe',pattern1))
+print(re.fullmatch(abcd1234qwe,pattern1))
+
+################################################################################################
+
+#### sub
+
+print(re.sub(r'abc',r'ABC',pattern1))  # replace the values as per the expense
+print(re.subn(r'abc',r'ABC',pattern1)) # includes no words replaces
+
+
