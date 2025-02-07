@@ -38,5 +38,5 @@ def exe_commands(hostname,command):
 
 
 
-exe_commands( hostname,juno_cmd)
-
+if __name__ == "__main__":  # the below command runs only this file executes....
+    exe_commands( hostname,juno_cmd)
